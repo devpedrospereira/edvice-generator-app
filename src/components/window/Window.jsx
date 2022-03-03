@@ -4,8 +4,14 @@ import styles from "./style.module.scss"
 export default function Windows(){
 
     const [advices, setadvice] = useState({})
-    const [clic, setclic] = useState(Boolean)
+    const [clic, setclic] = useState(false)
     
+    
+    const active = () =>{
+        // alert("aasd")
+        // console.log("asdaad")
+    }
+
     useEffect(() => {
         fetch("https://api.adviceslip.com/advice")
             .then(response => response.json())
@@ -26,8 +32,9 @@ export default function Windows(){
                             <img src="./accets/pattern-divider-desktop.svg" alt="division" />
                         </div>
                         
-                        <button onClick={()=> setclic(!clic)} className={styles.button}>
-                            <img src="./accets/icon-dice.svg" alt="button" />
+                        <button  onClick={()=> setclic(!clic)} className={styles.button}
+>
+                            <img className={(clic === true) ? styles.buttonTrue: styles.buttonFalse} src="./accets/icon-dice.svg" alt="button" />
                         </button>
                     </>
                 )

@@ -55,7 +55,14 @@
 .button:hover{
     cursor: pointer;
     box-shadow: 0 0 2rem 1px var(--neonGreen);
-    transition: 1s;
+    transition: 0.5s;
+
 }
-
-
+.buttonTrue{
+    transform: rotate(360deg);
+    transition: 2s;
+}
+.buttonFalse{
+    transform: rotate(180deg);
+    transition: 2s;
+}
