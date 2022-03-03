@@ -18,8 +18,8 @@ export default function Windows() {
             return (
                 <>
                     <div className={styles.advice}>
-                        <h2>Adivice #{id}</h2>
-                        <h1>{advice}</h1>
+                        <h2>ADVICE #{id}</h2>
+                        <h1>{`"${advice}"`}</h1>
                     </div>
 
                     <div className={styles.division}>
