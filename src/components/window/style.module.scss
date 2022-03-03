@@ -21,8 +21,8 @@
     flex-direction: column;
     
     h1{
+        height: 7rem;
         color: var(--LightCyan);
-
         font-size: 20px;
         text-align: center;
         
@@ -60,9 +60,9 @@
 }
 .buttonTrue{
     transform: rotate(360deg);
-    transition: 2s;
+    transition: 1.5s;
 }
 .buttonFalse{
     transform: rotate(180deg);
-    transition: 2s;
+    transition: 1.5s;
 }
