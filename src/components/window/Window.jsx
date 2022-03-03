@@ -26,6 +26,12 @@ export default function Windows() {
                         <img
                             src="./accets/pattern-divider-desktop.svg"
                             alt="division"
+                            className={styles.divisionDesktop}
+                        />
+                        <img
+                            src="./accets/pattern-divider-mobile.svg"
+                            alt="division"
+                            className={styles.divisionMobile}
                         />
                     </div>
 
@@ -34,7 +40,11 @@ export default function Windows() {
                         className={styles.button}
                     >
                         <img
-                            className={clic === true ? styles.buttonTrue : styles.buttonFalse}
+                            className={
+                                clic === true
+                                    ? styles.buttonTrue
+                                    : styles.buttonFalse
+                            }
                             src="./accets/icon-dice.svg"
                             alt="button"
                         />
@@ -45,9 +55,5 @@ export default function Windows() {
         }
     };
 
-    return(
-        <div className={styles.container}>
-            {render()}
-        </div>
-    )
+    return <div className={styles.container}>{render()}</div>;
 }
